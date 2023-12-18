@@ -1,8 +1,8 @@
 ﻿namespace Proje
 {
-    public partial class Form2 : Form
+    public partial class SoundsForm : Form
     {
-        public Form2()
+        public SoundsForm()
         {
             InitializeComponent();
         }

@@ -29,6 +29,11 @@
                 }
             }
         }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
     }
     public class Sound
     {

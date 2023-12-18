@@ -1,6 +1,6 @@
 ﻿namespace Proje
 {
-    partial class Form2
+    partial class SoundsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -44,9 +44,10 @@
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
             listView1.Dock = DockStyle.Fill;
             listView1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listView1.Location = new Point(0, 39);
+            listView1.Location = new Point(5, 39);
+            listView1.Margin = new Padding(8, 3, 3, 3);
             listView1.Name = "listView1";
-            listView1.Size = new Size(488, 329);
+            listView1.Size = new Size(741, 543);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -70,9 +71,9 @@
             // 
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(5, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(488, 39);
+            panel1.Size = new Size(741, 39);
             panel1.TabIndex = 1;
             // 
             // button1
@@ -86,17 +87,18 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form2
+            // SoundsForm
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 26, 54);
-            ClientSize = new Size(488, 368);
+            ClientSize = new Size(746, 582);
             Controls.Add(listView1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
+            Name = "SoundsForm";
+            Padding = new Padding(5, 0, 0, 0);
             Text = "Form2";
             panel1.ResumeLayout(false);
             ResumeLayout(false);

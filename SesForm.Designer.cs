@@ -81,6 +81,7 @@
             textBox2.Size = new Size(254, 23);
             textBox2.TabIndex = 2;
             textBox2.KeyDown += TextBox2_KeyDown;
+            textBox2.KeyUp += textBox2_KeyUp;
             // 
             // button2
             // 

@@ -1,11 +1,21 @@
 namespace Proje
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        
+        public MainForm()
         {
             InitializeComponent();
-            Form2 form = new();
+            ChangePanel(new SoundsForm());
+        }
+        void ChangePanel(Form form)
+        {
+            switch (form)
+            {
+                case SoundsForm:
+                    buttonSongs.BackColor = Color.FromArgb(18, 26, 54);
+                    break;
+            }
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
