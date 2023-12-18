@@ -6,7 +6,7 @@
         public SesForm()
         {
             InitializeComponent();
-            sound = new Sound { Ad = "132", Hotkey = textBox2.Text, Konum = textBox1.Text };
+            sound = new Sound { Ad = openFileDialog1.SafeFileName, Hotkey = textBox2.Text, Konum = textBox1.Text };
         }
 
         private void TextBox2_KeyDown(object? sender, KeyEventArgs e)
@@ -17,15 +17,15 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            using (openFileDialog1)
             {
-                openFileDialog.Title = "Select a File";
-                openFileDialog.Filter = "All Files|*.*"; // You can change the filter based on your requirements
+                openFileDialog1.Title = "Select a File";
+                openFileDialog1.Filter = "All Files|*.*"; // You can change the filter based on your requirements
 
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     // Get the selected file location and display it in the TextBox
-                    textBox1.Text = openFileDialog.FileName;
+                    textBox1.Text = openFileDialog1.FileName;
                 }
             }
         }
