@@ -129,6 +129,7 @@
             buttonSongs.Tag = "panelButton";
             buttonSongs.Text = "Sesler";
             buttonSongs.UseVisualStyleBackColor = true;
+            buttonSongs.Click += buttonSongs_Click;
             // 
             // panel3
             // 
@@ -159,7 +160,7 @@
             panel4.Size = new Size(6, 582);
             panel4.TabIndex = 4;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -172,7 +173,7 @@
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4);
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Form1";
             panelNav.ResumeLayout(false);
             ResumeLayout(false);

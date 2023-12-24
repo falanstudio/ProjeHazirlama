@@ -2,3 +2,6 @@
 
 # CS8605: Unboxing a possibly null value.
 dotnet_diagnostic.CS8605.severity = silent
+
+# CS8602: Dereference of a possibly null reference.
+dotnet_diagnostic.CS8602.severity = silent

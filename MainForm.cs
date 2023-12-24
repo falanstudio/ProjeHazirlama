@@ -2,28 +2,35 @@ namespace Proje
 {
     public partial class MainForm : Form
     {
-        
+
         public MainForm()
         {
             InitializeComponent();
-            ChangePanel(new SoundsForm());
+            var s = new SoundboardForm();
+            s.ShowDialog();
+            //ChangePanel(new SoundsForm());
         }
-        void ChangePanel(Form form)
+
+        private void buttonSongs_Click(object sender, EventArgs e)
         {
-            switch (form)
-            {
-                case SoundsForm:
-                    buttonSongs.BackColor = Color.FromArgb(18, 26, 54);
-                    break;
-            }
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            panelMain.Controls.Add(form);
-            panelMain.Tag = form;
-            form.BringToFront();
-            form.Size = panelMain.Size;
-            form.Show();
+            
         }
+        //void ChangePanel(Form form)
+        //{
+        //    switch (form)
+        //    {
+        //        case SoundsForm:
+        //            buttonSongs.BackColor = Color.FromArgb(18, 26, 54);
+        //            break;
+        //    }
+        //    form.TopLevel = false;
+        //    form.FormBorderStyle = FormBorderStyle.None;
+        //    form.Dock = DockStyle.Fill;
+        //    panelMain.Controls.Add(form);
+        //    panelMain.Tag = form;
+        //    form.BringToFront();
+        //    form.Size = panelMain.Size;
+        //    form.Show();
+        //}
     }
 }
