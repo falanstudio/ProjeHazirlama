@@ -5,3 +5,6 @@ dotnet_diagnostic.CS8605.severity = silent
 
 # CS8602: Dereference of a possibly null reference.
 dotnet_diagnostic.CS8602.severity = silent
+
+# CS0108: Member hides inherited member; missing new keyword
+dotnet_diagnostic.CS0108.severity = silent
