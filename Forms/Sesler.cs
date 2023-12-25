@@ -1,5 +1,4 @@
 ﻿using NAudio.Wave;
-using System.Media;
 
 namespace Proje
 {
