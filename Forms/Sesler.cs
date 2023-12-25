@@ -5,7 +5,7 @@ namespace Proje
     public partial class Sesler : Form
     {
         string[] sounds = Directory.GetFiles("E:\\Projects\\Proje\\Sounds\\");
-        private readonly WaveOutEvent waveOut = new WaveOutEvent();
+        readonly WaveOutEvent waveOut = new WaveOutEvent();
         public Sesler()
         {
             InitializeComponent();
@@ -34,6 +34,14 @@ namespace Proje
             waveOut.Stop();
             waveOut.Init(new MediaFoundationReader(sounds[(int)buton.Tag]));
             waveOut.Play();
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            // Dispose of resources when the form is closed
+            waveOut.Dispose();
+
+            base.OnFormClosed(e);
         }
     }
 }
