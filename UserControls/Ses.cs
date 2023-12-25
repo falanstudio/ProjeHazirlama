@@ -18,7 +18,6 @@ namespace Proje
         }
 
         #region Properties
-        private Button _Button;
         private string _Name;
         private Image _Icon;
 
@@ -32,8 +31,8 @@ namespace Proje
         [Category("Ses Props")]
         public Button Button
         {
-            get { return _Button; }
-            set { _Button = value; button1 = value; }
+            get { return button1; }
+            set { button1 = value;}
         }
 
         [Category("Ses Props")]

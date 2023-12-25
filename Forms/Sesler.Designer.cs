@@ -31,9 +31,6 @@
             panel1 = new Panel();
             panel2 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            ses1 = new Ses();
-            ses2 = new Ses();
-            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -56,38 +53,12 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(ses1);
-            flowLayoutPanel1.Controls.Add(ses2);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 123);
             flowLayoutPanel1.Margin = new Padding(4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(503, 459);
             flowLayoutPanel1.TabIndex = 2;
-            // 
-            // ses1
-            // 
-            ses1.BorderStyle = BorderStyle.FixedSingle;
-            ses1.Button = null;
-            ses1.Font = new Font("Segoe UI", 12F);
-            ses1.Icon = null;
-            ses1.Location = new Point(4, 4);
-            ses1.Margin = new Padding(4);
-            ses1.Name = "ses1";
-            ses1.Size = new Size(85, 117);
-            ses1.TabIndex = 0;
-            // 
-            // ses2
-            // 
-            ses2.BorderStyle = BorderStyle.FixedSingle;
-            ses2.Button = null;
-            ses2.Font = new Font("Segoe UI", 12F);
-            ses2.Icon = null;
-            ses2.Location = new Point(97, 4);
-            ses2.Margin = new Padding(4);
-            ses2.Name = "ses2";
-            ses2.Size = new Size(85, 117);
-            ses2.TabIndex = 1;
             // 
             // Sesler
             // 
@@ -104,7 +75,6 @@
             MinimumSize = new Size(746, 582);
             Name = "Sesler";
             Text = "Sesler";
-            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -113,7 +83,5 @@
         private Panel panel1;
         private Panel panel2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Ses ses1;
-        private Ses ses2;
     }
 }
