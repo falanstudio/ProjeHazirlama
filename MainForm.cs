@@ -6,8 +6,6 @@ namespace Proje
         public MainForm()
         {
             InitializeComponent();
-            var s = new SoundboardForm();
-            s.ShowDialog();
             ChangePanel(new Sesler());
         }
 
