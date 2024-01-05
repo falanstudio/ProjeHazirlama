@@ -36,10 +36,10 @@ namespace Proje
             foreach (string sound in sounds)
             {
                 Ses ses = new Ses();
-                ses.Button.Tag = sayac;
-                sayac++;
-                ses.Button.Text = (sayac).ToString() + ". Ses";
-                ses.Button.Click += SesÇal;
+                //ses.button.Tag = sayac;
+                //sayac++;
+                //ses.button.Text = (sayac).ToString() + ". Ses";
+                //ses.button.Click += SesÇal;
                 ses.SesName = Path.GetFileName(sound);
                 flowLayoutPanel1.Controls.Add(ses);
             }

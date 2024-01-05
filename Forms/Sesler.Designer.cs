@@ -55,7 +55,7 @@
             // 
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 123);
-            flowLayoutPanel1.Margin = new Padding(4);
+            flowLayoutPanel1.Margin = new Padding(8);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(503, 459);
             flowLayoutPanel1.TabIndex = 2;
@@ -64,6 +64,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(18, 26, 54);
             ClientSize = new Size(746, 582);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);

@@ -28,62 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            roundButton1 = new Custom_Controls.RoundButton();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(4, 81);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(73, 32);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 56);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(33, 112);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(52, 21);
             label1.TabIndex = 1;
             label1.Text = "label1";
             // 
-            // pictureBox1
+            // roundButton1
             // 
-            pictureBox1.Location = new Point(-1, 4);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(83, 48);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            roundButton1.FlatAppearance.BorderColor = Color.Lime;
+            roundButton1.FlatAppearance.BorderSize = 2;
+            roundButton1.FlatAppearance.MouseDownBackColor = Color.Lime;
+            roundButton1.FlatAppearance.MouseOverBackColor = Color.Lime;
+            roundButton1.FlatStyle = FlatStyle.System;
+            roundButton1.HeightEllipse = 20;
+            roundButton1.Location = new Point(7, 7);
+            roundButton1.Name = "roundButton1";
+            roundButton1.Size = new Size(98, 102);
+            roundButton1.TabIndex = 2;
+            roundButton1.UseVisualStyleBackColor = true;
+            roundButton1.WidthEllipse = 20;
             // 
             // Ses
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(18, 26, 54);
             BorderStyle = BorderStyle.FixedSingle;
-            Controls.Add(pictureBox1);
+            Controls.Add(roundButton1);
             Controls.Add(label1);
-            Controls.Add(button1);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Ses";
-            Size = new Size(85, 117);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Padding = new Padding(4);
+            Size = new Size(112, 137);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
         private Label label1;
-        private PictureBox pictureBox1;
+        private Custom_Controls.RoundButton roundButton1;
     }
 }
